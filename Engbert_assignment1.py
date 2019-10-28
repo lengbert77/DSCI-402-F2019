@@ -4,7 +4,7 @@ def flat(list_name):
     #base case where an empty list is flattened to an empty list
     if list_name==[]:
         return list_name
-#this line tells us that if the first list element is a list, then we want
+#this next line tells us that if the first list element is a list, then we want
 #to return the sub-elements of that first element (index 0) plus the rest of the list elements as a flattened list
     if isinstance(list_name[0],list):
         return flat(list_name[0]+list_name[1:])
